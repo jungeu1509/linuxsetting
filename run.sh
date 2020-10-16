@@ -14,10 +14,10 @@ SHELL_PATH=`pwd -P`
 
 
 cp vim/.vimrc ~/.vimrc
+sudo cp vim/jellybeans.vim /usr/share/vim/vim*
+
 mkdir ~/.vim
 mkdir ~/.vim/bundle
-
-
 cd ~/.vim/bundle/
 git clone https://github.com/VundleVim/Vundle.vim.git
 
