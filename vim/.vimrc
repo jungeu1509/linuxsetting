@@ -1,9 +1,11 @@
-" 구문 강조
+"구문 강조
 syntax on
 
 " line number
 set number
-set relativenumber
+
+" write line number relative
+" set relativenumber 
 
 " highlight
 set hlsearch
@@ -70,7 +72,6 @@ Plugin 'terryma/vim-smooth-scroll'
 Plugin 'Raimondi/delimitMate'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'Syntastic'
 Plugin 'Rip-Rip/clang_complete'
 Plugin 'scrooloose/nerdcommenter'
 
@@ -124,20 +125,6 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsEditSplit="vertical"
 
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-let g:syntastic_cpp_compiler = 'g++'
-let g:syntastic_cpp_compiler_options = "-std=c++11 -Wall -Wextra -Wpedantic"
-let g:syntastic_c_compiler_options = "-std=c11 -Wall -Wextra -Wpedantic"
-
 " NERD Commenter
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
@@ -156,3 +143,7 @@ let g:NERDTrimTrailingWhitespace = 1
 " customize keymapping
 map <Leader>cc <plug>NERDComToggleComment
 map <Leader>c<space> <plug>NERDComComment
+
+
+
+
