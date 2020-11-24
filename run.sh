@@ -23,8 +23,10 @@ mkdir ~/.vim/bundle
 cd ~/.vim/bundle/
 git clone https://github.com/VundleVim/Vundle.vim.git
 cd $RELATIVE_DIR
-echo "Setting : enter :PluginInstall in vim"
+echo "Setting : enter ':PluginInstall' in vim"
 
+cd $SHELL_PATH/cmake-3.18.4
+./bootstrap && make && sudo make install
 
 sudo add-apt-repository ppa:numix/ppa
 sudo apt-get update
