@@ -12,7 +12,7 @@ sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
 sudo ubuntu-drivers autoinstall
 
-sudo apt-get install -y libssl-dev build-essential libpcap-dev libpci-dev libsndfile1-dev libjack-dev git libncurses5-dev libncursesw5-dev doxygen unity-tweak-tool vim-gtk git
+sudo apt-get install -y libssl-dev build-essential libpcap-dev libpci-dev libsndfile1-dev libjack-dev git libncurses5-dev libncursesw5-dev doxygen unity-tweak-tool vim-gtk git tree
 echo "Setting : download success"
 
 cp vim/.vimrc ~/.vimrc
