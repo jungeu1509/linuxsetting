@@ -25,7 +25,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git
 cd $RELATIVE_DIR
 echo "Setting : enter ':PluginInstall' in vim"
 
-cd $SHELL_PATH/cmake-3.18.4
+cd $SHELL_PATH/cmake-3.19.1
 ./bootstrap && make && sudo make install
 
 sudo add-apt-repository ppa:numix/ppa
