@@ -16,7 +16,7 @@ sudo apt-get install -y libssl-dev build-essential libpcap-dev libpci-dev libsnd
 echo "Setting : download success"
 
 cp vim/.vimrc ~/.vimrc
-sudo cp vim/jellybeans.vim /usr/share/vim/vim*
+sudo cp vim/jellybeans.vim /usr/share/vim/vim74/colors
 
 mkdir ~/.vim
 mkdir ~/.vim/bundle
