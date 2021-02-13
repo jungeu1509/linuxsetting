@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo 'Setting : Start setting for Android Termux'
+
 echo 'PARAM:' $0
 RELATIVE_DIR=`dirname "$0"`
 cd $RELATIVE_DIR
@@ -7,10 +9,12 @@ SHELL_PATH=`pwd -P`
 echo "shell location : $SHELL_PATH"
 GALAXY_ROOT='/data/data/com.termux/files'
 
+echo 'Setting : You need to change the storage permission'
+termux-setup-storage
+
 echo 'export PS1="\[$(tput bold)\][\t]\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;14m\]\u@\[$(tput sgr0)\]\[\033[38;5;10m\]\H:\[$(tput sgr0)\]\[\033[38;5;203m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\n\\$\[$(tput sgr0)\]"' >> ~/.bashrc
 echo 'export ROOT="/data/data/com.termux/files/"' >> ~/.bashrc
 echo 'source .bashrc_func' >> ~/.bashrc
-
 
 pkg install -y tree vim-python python nodejs yarn clang openssl-tool ripgrep
 echo "Setting : download pkg success"
@@ -25,7 +29,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git
 cd $RELATIVE_DIR
 echo "Setting : enter ':PluginInstall' in vim"
 
-echo "yarn global add code-server"
+yarn global add code-server
 cp code-server/.bashrc_func $HOME/
 cp code-server/binding.gyp ~/.config/yarn/global/node_modules/code-server/lib/vscode/node_modules/spdlog/binding.gyp
 cd ~/.config/yarn/global/node_modules/code-server/lib/vscode/node_modules/spdlog/
