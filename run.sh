@@ -13,7 +13,7 @@ sudo apt-get install -y tree vim
 echo "Setting : download success"
 
 cp vim/.vimrc ~/.vimrc
-sudo cp vim/jellybeans.vim /usr/share/vim/vim74/colors
+sudo cp vim/jellybeans.vim $ROOT/usr/share/vim/vim82/colors
 
 mkdir ~/.vim
 mkdir ~/.vim/bundle
