@@ -1,0 +1,11 @@
+function CV_open() {
+  echo "start code-server for everybody ---------------------------------"
+  cat ~/.config/code-server/cpmfog/yaml
+  echo "run code-server -------------------------------------------------"
+  code-server --bind-addr 0.0.0.0:8080 --cert --disable-telemetry
+}
+
+func CV_local() {
+  echo "run code-server for local ---------------------------------------"
+  code-server --auth none --disable-telemetry
+}
