@@ -12,11 +12,12 @@ sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
 sudo ubuntu-drivers autoinstall
 
-sudo apt-get install -y libssl-dev build-essential libpcap-dev libpci-dev libsndfile1-dev libjack-dev git libncurses5-dev libncursesw5-dev doxygen unity-tweak-tool vim-gtk git tree
+sudo apt-get install -y libssl-dev build-essential libpcap-dev libpci-dev libsndfile1-dev libjack-dev git libncurses5-dev libncursesw5-dev doxygen unity-tweak-tool vim-gtk tree gnome-tweak-tool
 echo "Setting : download success"
 
 cp vim/.vimrc ~/.vimrc
 sudo cp vim/jellybeans.vim /usr/share/vim/vim74/colors
+sudo cp vim/jellybeans.vim /usr/share/vim/vim81/colors
 
 mkdir ~/.vim
 mkdir ~/.vim/bundle
