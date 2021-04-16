@@ -26,6 +26,9 @@ set shiftwidth=4
 set autoindent
 "set cindent
 
+" set clipboard to system
+set clipboard=unnamedplus
+
 " Key Settings
     "when copy ignore auto indet + toggle with F2
 nnoremap <F2> :set invpaste paste?<CR>
