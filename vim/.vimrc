@@ -75,7 +75,7 @@ Plugin 'terryma/vim-smooth-scroll'
 Plugin 'Raimondi/delimitMate'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'Rip-Rip/clang_complete'
+" Plugin 'Rip-Rip/clang_complete'
 Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line
